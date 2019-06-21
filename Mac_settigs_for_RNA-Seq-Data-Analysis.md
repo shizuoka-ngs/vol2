@@ -115,4 +115,14 @@ cwltool pitagora-cwl/tools/kallisto/index/kallisto_index.cwl \
 --fasta_files Homo_sapiens.GRCh38.cdna.all.fa.gz \
 --index_name Human
 ```
-
+### kallisto quant実行(paired_end)
+```
+# pitagora-cwlを使ってkallistoを手元のマシンにインストールすることなく実行
+cwltool pitagora-cwl/tools/kallisto/quant/paired_end/kallisto_quant_pe.cwl \
+--index_file Human \
+--fq1 SRR7300567.sra_1.fastq.gz \
+--fq2 SRR7300567.sra_2.fastq.gz \
+--nthreads 2 \
+--bootstrap_samples 100 \
+--out_dir_name kallisto_output_SRR7300567
+```
