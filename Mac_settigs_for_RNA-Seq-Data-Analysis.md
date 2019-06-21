@@ -155,6 +155,18 @@ plt.ylabel("SRR7300569")
 
 ### seabornが好きなひとはこちら
 
+```
+%matplotlib inline
+import seaborn as sns
+ax = sns.scatterplot(x="TPM_SRR7300567", y="TPM_SRR7300569", data=e)
+```
+```
+# jointplot
+sns.jointplot(e[("TPM_SRR7300567")], e[("TPM_SRR7300569")])
+
+```
+
+
 
 # CWLを使ってkallistoを実行する
 
