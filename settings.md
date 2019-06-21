@@ -74,8 +74,6 @@ $ conda install kallisto
 詳細は[こちら](https://qiita.com/epsilonminder/items/e3b1fc00edb63cb3a32b)で。
 
 
-
-
 ## jupyter, seabornをインストール
 
 - jupyterをインストール
@@ -85,5 +83,36 @@ conda install jupyter jupyter_console qtconsole notebook sphinx spinxcontrib nbc
 - seabornをinstall(seabornをインストールしてすると、numpy, scipy, pandasなどもついでにインストールされる)
 ```
 conda install seaborn
+```
+
+## CWLを使ってkallistoを実行する
+
+詳細は[こちら](http://bonohu.jp/blog/running-kallisto-via-cwl.html)を確認してください
+
+### cwltoolのインストール
+
+`conda install cwltool`
+`git clone https://github.com/pitagora-network/pitagora-cwl`
+
+### SRAをFASTQに変換
+```
+cd <working directory>
+# pitagora-cwlを使ってfasterq-dumpを手元のマシンにインストールすることなく実行
+cwltool pitagora-cwl/tools/fasterq-dump/fasterq-dump.cwl \
+--srafile SRR7300567.sra
+
+# pigzで生成されたFASTQファイルを圧縮
+# condaでpigzをinstall
+conda install pigz
+pigz SRR7300567.sra*.fastq
+```
+
+### kallisto index作成
+
+```
+# pitagora-cwlを使ってkallistoを手元のマシンにインストールすることなく実行
+cwltool pitagora-cwl/tools/kallisto/index/kallisto_index.cwl \
+--fasta_files Homo_sapiens.GRCh38.cdna.all.fa.gz \
+--index_name Human
 ```
 
