@@ -101,7 +101,7 @@ $ kallisto index -i GRCh38_index Homo_sapiens.GRCh38.cdna.all.fa.gz
 ## kallistoによる発現量の定量化
 
 ```
-kallisto quant -t 2 -i GRCh38_index -o SRR7300567_result/SRR7300567_1.fastq.gz SRR7300567_2.fastq.gz
+kallisto quant -t 2 -i GRCh38_index -o SRR7300567_result/ SRR7300567_1.fastq.gz SRR7300567_2.fastq.gz
 ```
 
 ```
@@ -165,6 +165,8 @@ ax = sns.scatterplot(x="TPM_SRR7300567", y="TPM_SRR7300569", data=e)
 sns.jointplot(e[("TPM_SRR7300567")], e[("TPM_SRR7300569")])
 
 ```
+
+
 
 
 
