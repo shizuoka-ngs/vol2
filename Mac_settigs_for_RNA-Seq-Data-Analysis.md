@@ -82,7 +82,7 @@ conda install jupyter jupyter_console qtconsole notebook sphinx spinxcontrib nbc
 ```
 - seabornをinstall(seabornをインストールしてすると、numpy, scipy, pandasなどもついでにインストールされる)
 ```
-conda install seaborn
+conda install seaborn 
 ```
 
 ## CWLを使ってkallistoを実行する
