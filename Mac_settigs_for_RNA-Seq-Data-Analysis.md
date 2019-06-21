@@ -112,7 +112,7 @@ abundance.h5 abundance.tsv run_info.json
 
 上記と同様の操作でSRR7300569.sraについてもkallistoを実行しておきます
 ```
-kallisto quant -t 2 -i GRCh38_index -o SRR7300569_result/SRR7300569_1.fastq.gz SRR7300569_2.fastq.gz
+kallisto quant -t 2 -i GRCh38_index -o SRR7300569_result/ SRR7300569_1.fastq.gz SRR7300569_2.fastq.gz
 ```
 ## 出力の確認
 
