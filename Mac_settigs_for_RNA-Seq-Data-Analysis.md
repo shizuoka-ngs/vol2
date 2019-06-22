@@ -172,7 +172,7 @@ sns.jointplot(e[("TPM_SRR7300567")], e[("TPM_SRR7300569")])
 詳細は[こちら](http://bonohu.jp/blog/running-kallisto-via-cwl.html)を確認してください
 
 ## Dockerのインストール
-[公式のSaitoのDLリンク](https://docs.docker.com/docker-for-mac/install/)から
+[公式のサイトのDLリンク](https://docs.docker.com/docker-for-mac/install/)から
 Docker Desktop for MacのインストーラーをDLして、表示される手順通りにインストールを進めます
 （dockerhubへのサインインが必要です）。
 
