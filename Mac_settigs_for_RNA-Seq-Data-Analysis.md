@@ -179,6 +179,7 @@ Docker Desktop for MacのインストーラーをDLして、表示される手�
 ## cwltoolのインストール
 
 `conda install cwltool`
+
 `git clone https://github.com/pitagora-network/pitagora-cwl`
 
 ## SRAをFASTQに変換
