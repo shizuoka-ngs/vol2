@@ -86,7 +86,7 @@ conda install seaborn
 kallistoによる解析を行いますが、手順は[shizuokangs #1](https://github.com/shizuoka-ngs/vol1/blob/master/RNA-Seq-Data-Analysis-for-Beginners.md)
 とほぼ同様のため、shizuokangs#1の方もご参考に。
 
-## 公共Bからデータを取得、、、
+## 公共データベースからデータを取得、、、
 
 公共DBからデータを取得する必要が本来ありますが、この操作は大変時間がかかるため、
 今回もHDDで取得済みのFASTQファイル、cDNA配列を入れて配布します。
