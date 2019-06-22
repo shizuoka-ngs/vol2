@@ -135,7 +135,7 @@ e1 = pd.read_table('SRR7300567のabundance.tsv')
 e1 = e1.drop(columns=['length', 'eff_length', 'est_counts'])
 e1.columns = ['target_id', 'TPM_SRR7300567']
 e2 = pd.read_table('SRR7300569のabundance.tsv')
-e2 = e1.drop(columns=['length', 'eff_length', 'est_counts'])
+e2 = e2.drop(columns=['length', 'eff_length', 'est_counts'])
 e2.columns = ['target_id', 'TPM_SRR7300569']
 
 # 二つのデータを'target_id'で結合
