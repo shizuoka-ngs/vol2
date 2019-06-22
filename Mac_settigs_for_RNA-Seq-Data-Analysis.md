@@ -44,11 +44,6 @@ $ brew install git
 ※ 一台のMacに複数のユーザを設定して使っている場合、homebrewを使うとpermission errorとなるケースがあるようです。
 homebrewは現在sudoすることができないため、この場合/usr/local/Cellarをchownする必要があります。詳細は[こちら](https://qiita.com/HIROSHI-1403/items/c90699c1a3f3bd9d63f9)を参考に。
 
-## Dockerのインストール
-[公式のSaitoのDLリンク](https://docs.docker.com/docker-for-mac/install/)から
-Docker Desktop for MacのインストーラーをDLして、表示される手順通りにインストールを進めます
-（dockerhubへのサインインが必要です）。
-
 
 ## minicondaのインストール
 [Condaの公式サイト](https://docs.conda.io/en/latest/miniconda.html)から
@@ -88,8 +83,13 @@ conda install seaborn
 
 **生命科学データ解析を支える情報技術2.8にある配列解析を実際に挑戦します*
 
-公共Bからデータを取得、、の必要が本来ありますが、この操作は大変時間がかかるため、
-HDDで取得済みのFASTQファイル、cDNA配列を入れて配布します。
+kallistoによる解析を行いますが、手順は[shizuokangs #1](https://github.com/shizuoka-ngs/vol1/blob/master/RNA-Seq-Data-Analysis-for-Beginners.md)
+とほぼ同様のため、shizuokangs#1の方もご参考に。
+
+## 公共Bからデータを取得、、、
+
+公共DBからデータを取得する必要が本来ありますが、この操作は大変時間がかかるため、
+今回もHDDで取得済みのFASTQファイル、cDNA配列を入れて配布します。
 
 ## インデックスの作成
 
@@ -167,12 +167,14 @@ sns.jointplot(e[("TPM_SRR7300567")], e[("TPM_SRR7300569")])
 ```
 
 
-
-
-
 # CWLを使ってkallistoを実行する
 
 詳細は[こちら](http://bonohu.jp/blog/running-kallisto-via-cwl.html)を確認してください
+
+## Dockerのインストール
+[公式のSaitoのDLリンク](https://docs.docker.com/docker-for-mac/install/)から
+Docker Desktop for MacのインストーラーをDLして、表示される手順通りにインストールを進めます
+（dockerhubへのサインインが必要です）。
 
 ## cwltoolのインストール
 
